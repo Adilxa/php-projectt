@@ -22,8 +22,9 @@
                     <tr class="bg-white hover:bg-gray-100 transition">
                         <td class="px-4 py-2 text-xl">{{ $book->title }}</td>
                         <td class="px-4 py-2">{{ $book->author }}</td>
-                        <td class="px-4 py-2 flex gap-10">
+                        <td class="px-4 py-2 flex gap-10 items-center">
                             <a href="{{ route('books.show', $book) }}" class="text-blue-500 hover:underline text-xl ">View book</a>
+                            <a href="{{ route('books.show', $book) }}" class="text-blue-gray hover:underline text-xl bg-green-500 p-2 rounded transition text-white">Get the book</a>
     </form>
                         </td>
                     </tr>
