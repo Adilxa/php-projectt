@@ -17,6 +17,7 @@ use App\Http\Controllers\UserController;
 |
 */
 
+Route::post('/books/{book}', [BookController::class, 'saveDuration'])->name('books.save-duration');
 
 Route::get('/books/admin', [BookController::class, 'index'])->name('books.index');
 Route::get('/books', [UserController::class, 'index'])->name('booksUser.index');
